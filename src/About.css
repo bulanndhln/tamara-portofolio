@@ -1,0 +1,278 @@
+#about .container {
+  max-width: 1200px; /* Biar gak melebar sampai ujung layar */
+  width: 90%; /* Supaya responsif */
+  margin: 0 auto; /* Biar selalu di tengah */
+}
+
+.wrapper {
+    max-width: 1800px; /* Biar gak melebar ke ujung */
+    width: 90%;
+    margin: 0 auto; /* Biar selalu di tengah */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+aside {
+  float: right;
+  display: block;
+  position: relative;
+  margin-top:150px;
+  margin-right: 70px;
+  
+  padding: 20px;
+  width: 270px;
+  height: 270px;
+  border-radius: 24px;
+  border: 5px solid #8CB6CC;
+  animation: second 3s linear 2s infinite alternate;
+
+}
+@keyframes second {
+  0%   { left:0px; top:0px;}
+  50% {left:0px; top:30px;}
+  100%  { left:0px; top:0px;}
+
+}
+
+
+aside .foto {
+
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  margin:-5px;
+  border: 5px solid #8CB6CC;
+
+}
+
+aside .foto img {
+
+  margin-left:15px;
+  margin-top:15px;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+#about{
+
+  position: relative;
+  display:block;
+  float: left;
+  margin-top: 100px;
+  margin-left: 50px;
+  justify-content: center;
+  text-align: left;
+  width: 60%;
+
+}
+.wrapper  .aboutMe h1{  
+  width: 22ch;
+  text-wrap:nowrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(19, end) infinite alternate-reverse;
+
+}
+.wrapper  .aboutMe h3{  
+    overflow: hidden;
+    text-wrap: nowrap;
+    width: 20ch;
+    animation: typing 3.5s steps(14, end) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+
+
+
+
+/* Responsif Laptop*/
+
+@media (max-width: 1280px) {
+  #about{
+    position: relative;
+    display:block;
+    float: none;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0px;
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+
+  }
+  .wrapper  .aboutMe h1{
+    font-size: 2em;
+    width: 20ch;
+  }
+
+  aside {
+    float: none;
+    display: block;
+    position: relative;
+    margin-top:150px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 270px;
+    height: 270px;
+    border-radius: 24px;
+    border: 5px solid #8CB6CC;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #about{
+    position: relative;
+    display:block;
+    float: none;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0px;
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+  }
+    .wrapper  .aboutMe h1{
+    font-size: 2em;
+    width: 22ch;
+  }
+
+  aside {
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    float: none;
+    display: block;
+    position: relative;
+    margin-top:80px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom:50px;
+    padding: 20px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+    border: 5px solid #8CB6CC;
+  }
+}
+
+/* Responsif Tablet*/
+@media (max-width: 768px) {
+  
+  #about{
+    position: relative;
+    display:block;
+    float: none;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0px;
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+  }
+  .wrapper  .aboutMe h1{
+    font-size: 2em;
+    width: 22ch;
+  }
+  aside {
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    float: none;
+    display: block;
+    position: relative;
+    margin-top:80px;
+    margin-bottom:50px;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding: 20px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+    border: 5px solid #8CB6CC;
+  }
+
+  
+
+    
+}
+
+/* Responsif Smartphone*/
+@media (max-width: 576px) {
+  .wrapper {
+    margin:0;
+    padding:0;
+    margin-left:20px;
+    margin-right:20px;
+  }
+  #about{
+    position: relative;
+    display:block;
+    float: none;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0px;
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+  }
+
+  aside {
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    float: none;
+    display: block;
+    position: relative;
+    margin-top:60px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    border: 5px solid #8CB6CC;
+  }
+
+    
+  aside .foto {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    margin:-5px;
+
+  }
+
+  aside .foto img {
+
+    margin-left:15px;
+    margin-top:15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+  }
+    .wrapper  .aboutMe h1{
+    font-size: 1.2em;
+    width: 22ch;
+  }
+    .wrapper  .aboutMe h3{
+    margin-top: 0px;
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,265 @@
+nav {
+    position: sticky;
+    top: 20px;
+    max-width: 1800px; /* Supaya tidak terlalu lebar */
+    width: 90%; /* Responsif */
+    margin: 20px auto; /* Auto untuk pusat, hapus margin-left & right */
+    display: flex;
+    justify-content: space-between; /* Logo kiri, menu kanan */
+    align-items: center;
+    z-index: 1000;
+    padding: 10px 20px; /* Tambah padding biar lebih seimbang */
+    border-radius: 20px;
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    background-color: rgba(140, 182, 204, 0.5);
+}
+
+/* Biar teks menu sejajar */
+
+
+
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+nav .navbar a{
+    padding:0;
+    margin:0;
+    display: inline;
+    margin-left:20px;
+    margin-right:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    decoration: none;
+    font-size:17px;
+    text-decoration: none;
+    color:#Ebe2d8;
+
+}
+
+nav .navbar .navRight a{
+    float: right;
+    
+
+}
+nav .navbar .navRight a:hover{
+    background-color: #Ebe2d8;
+    color:#8CB6CC;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+nav .navbar a h2{
+    font-family: "Iceberg", serif;
+    font-weight:bold;
+
+    font-size: 1.3em;
+    margin: 0;
+    padding:0;
+}
+/* Responsif Laptop*/
+@media (max-width: 1280px) {
+    nav{
+        margin: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        position: sticky;
+        top: 20px;
+        z-index: 10;
+        padding: 3px;
+        border-radius: 20px;
+        align-items: center;
+        height: 50px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+        
+    }
+    
+    nav .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    nav .navbar a{
+        padding:0;
+        margin:0;
+        display: inline;
+        margin-left:10px;
+        margin-right:10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        float: left;
+        decoration: none;
+        font-size:17px;
+        text-decoration: none;
+        color:#Ebe2d8;
+    
+    }
+    
+    nav .navbar .navRight a{
+        float: right;
+        
+    }
+    nav .navbar .navRight a:hover{
+        background-color: #Ebe2d8;
+        color:#8CB6CC;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+    nav .navbar a h2{
+        font-family: "Iceberg", serif;
+        font-weight:bold;
+    
+        font-size: 1.3em;
+        margin: 0;
+        padding:0;
+    }
+}
+/* Responsif Tablet*/
+@media (max-width: 768px) {
+    nav{
+        margin: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        position: sticky;
+        top: 20px;
+        z-index: 10;
+        padding: 3px;
+        border-radius: 20px;
+        align-items: center;
+        height: 50px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+        
+    }
+    
+    nav .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    nav .navbar a{
+        padding:0;
+        margin:0;
+        display: inline;
+        margin-left:7px;
+        margin-right:7px;
+        padding-left: 10px;
+        padding-right: 10px;
+        float: left;
+        decoration: none;
+        font-size:17px;
+        text-decoration: none;
+        color:#Ebe2d8;
+    
+    }
+    
+    nav .navbar .navRight a{
+        float: right;
+        font-size:15px;
+        display: none;
+        
+        
+    }
+    nav .navbar .navRight a:hover{
+        background-color: #Ebe2d8;
+        color:#8CB6CC;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+    nav .navbar a h2{
+        font-family: "Iceberg", serif;
+        font-weight:bold;
+    
+        font-size: 1.3em;
+        margin: 0;
+        padding:0;
+    }
+}
+/* Responsif Smartphone*/   
+@media (max-width: 576px) {
+    nav{
+        margin: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        position: sticky;
+        top: 20px;
+        z-index: 10;
+        padding: 3px;
+        border-radius: 20px;
+        align-items: center;
+        height: 50px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: hidden;
+        
+        
+    }
+    
+    nav .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    nav .navbar a{
+        padding:0;
+        margin:0;
+        display: inline;
+        margin-left:20px;
+        margin-right:20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        float: left;
+        decoration: none;
+        font-size:17px;
+        text-decoration: none;
+        color:#Ebe2d8;
+    
+    }
+    
+    nav .navbar .navRight a{
+        float: right;
+        
+        
+    
+    }
+    nav .navbar .navRight a:hover{
+        background-color: #Ebe2d8;
+        color:#8CB6CC;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+    nav .navbar a h2{
+        font-family: "Iceberg", serif;
+        font-weight:bold;
+        font-size: 1.3em;
+        margin: 0;
+        padding:0;
+    }
+}

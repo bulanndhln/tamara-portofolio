@@ -1,0 +1,59 @@
+.myportofolio-section {
+  padding-top: 20px; /* atur sesuai kebutuhan */
+}
+.carousel-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding:20px 20px;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 5px solid #Ebe2d8;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item .desc h3 {
+  font-size: 1.25rem;
+  color: #8CB6CC;
+  padding: 0 16px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+/* Jarak antar slide */
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+/* Dots */
+.slick-dots {
+  margin-top: 20px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 90%;
+    padding: 30px 10px;
+  }
+
+  .carousel-item img {
+    max-height: 300px;
+  }
+
+  .carousel-item .desc h3 {
+    font-size: 1rem;
+  }
+}
