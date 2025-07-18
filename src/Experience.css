@@ -65,12 +65,31 @@
 }
 
 
-/* Responsif */
-@media (max-width: 768px) {
 
-  .title{
+@media only screen and (max-width: 992px) {
+
+    .title{
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 20px;
-  }
+   }
 }
+
+/* HP (Lebih kecil dari 768px) */
+@media only screen and (max-width: 768px) {
+    .title{
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 20px;
+   }
+}
+
+/* HP Kecil (Lebih kecil dari 480px) */
+@media only screen and (max-width: 480px) {
+    .title{
+    font-size: 0.7em;
+    text-align: center;
+    margin-bottom: 20px;
+   }
+}
+
