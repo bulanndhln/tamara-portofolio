@@ -40,9 +40,9 @@ export default function Portofolio() {
   return (
     <>
       
-      <section id="MyPortofolio" className="myportofolio-section">
+      <section id="MyPortofolio" className="myportofolio-section" data-aos="fade-up">
         <div className="title">
-        <h2 data-aos="fade-up">Documentations</h2>
+        <h2 >Documentations</h2>
         </div>
         <div className="carousel-container">
           <Slider {...settings}>
