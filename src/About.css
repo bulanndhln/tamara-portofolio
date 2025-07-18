@@ -212,22 +212,22 @@ aside .foto img {
 /* Responsif Smartphone*/
 @media (max-width: 576px) {
   .wrapper {
+    margin-left:0px;
     margin:0;
     padding:0;
-    margin-left:20px;
-    margin-right:20px;
+
   }
   #about{
     position: relative;
     display:block;
     float: none;
     margin-top: 60px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 0px;
     justify-content: center;
     text-align: left;
-    width: 80%;
+    width: 90%;
   }
 
   aside {
@@ -269,7 +269,7 @@ aside .foto img {
   }
     .wrapper  .aboutMe h1{
     font-size: 1.2em;
-    width: 28ch;
+    width: 26ch;
   }
     .wrapper  .aboutMe h3{
     margin-top: 0px;
